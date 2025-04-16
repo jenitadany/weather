@@ -2,12 +2,12 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class WeatherService {
-  final String apiKey = 'your_real_api_key_here';
+  final String apiKey = '0f3d2e8f2558c996936a3818fb2813d6';
 
 
   Future<Map<String, dynamic>> fetchWeather(String city) async {
     final url = Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?q=Thoothukudi&appid=0f3d2e8f2558c996936a3818fb2813d6'
+        'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+apiKey
     );
 
     final response = await http.get(url);
