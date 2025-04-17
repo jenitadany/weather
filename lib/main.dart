@@ -11,7 +11,7 @@ class WeatherApp extends StatefulWidget {
 class _WeatherAppState extends State<WeatherApp> {
   final WeatherService _weatherService = WeatherService();
   Map<String, dynamic>? weatherData;
-  String city = 'London';
+  String city = 'Tirunelveli';
 
   @override
   void initState() {
